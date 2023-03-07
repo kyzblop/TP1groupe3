@@ -66,5 +66,4 @@ public class InfosEscale {
 		return "InfosEscale [id=" + id + ", heureArrivee=" + heureArrivee + ", heureDepart=" + heureDepart + "]";
 	}
 	
-	
 }
