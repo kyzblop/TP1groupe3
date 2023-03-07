@@ -23,13 +23,14 @@ public class Client {
 	private String telephone;
 	private String email;
 	
-	@OneToMany(mappedBy = "Reservation")
+	@OneToMany(mappedBy = "client")
 	private List<Reservation>listeR;
 	
 	
 	public Client() {
 		super();
 	}
+
 	public Client(String nom, String prenom, String adresse, String telephone, String email) {
 		super();
 		this.nom = nom;
