@@ -30,9 +30,8 @@ public class InfosEscale {
 	public InfosEscale() {
 		super();
 	}
-	public InfosEscale(int id, int heureArrivee, int heureDepart) {
+	public InfosEscale(int heureArrivee, int heureDepart) {
 		super();
-		this.id = id;
 		this.heureArrivee = heureArrivee;
 		this.heureDepart = heureDepart;
 	}
