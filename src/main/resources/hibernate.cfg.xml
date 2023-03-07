@@ -2,6 +2,7 @@
 <!DOCTYPE hibernate-configuration PUBLIC
 		"-//Hibernate/Hibernate Configuration DTD 3.0//EN"
 		"http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+<<<<<<< HEAD
 <hibernate-configuration>
 	<session-factory>
 		<property name="hibernate.connection.driver_class">com.mysql.jdbc.Driver</property>
@@ -24,4 +25,27 @@
 		
 		
 	</session-factory>
+=======
+<hibernate-configuration>
+
+	<session-factory>
+		<property name="hibernate.connection.driver_class">com.mysql.jdbc.Driver</property>
+		<property name="hibernate.connection.password">root</property>
+		<property name="hibernate.connection.url">jdbc:mysql://localhost:3306/tp1hibernate</property>
+		<property name="hibernate.connection.username">root</property>
+		<property name="hibernate.dialect">org.hibernate.dialect.MySQL5Dialect</property>
+		<property name="show_sql">true</property>
+		<property name="hibernate.hbm2ddl.auto">create</property>
+
+		<mapping class="com.inti.model.Client" />
+		<mapping class="com.inti.model.Passager" />
+		<mapping class="com.inti.model.Reservation" />
+		<mapping class="com.inti.model.Aeroport" />
+		<mapping class="com.inti.model.CompagnieAerienne" />
+		<mapping class="com.inti.model.InfosEscale" />
+		<mapping class="com.inti.model.Ville" />
+		<mapping class="com.inti.model.Vol" />
+	</session-factory>
+
+>>>>>>> branch 'master' of https://github.com/Jaolerr/TP1groupe3.git
 </hibernate-configuration>

@@ -23,13 +23,14 @@ public class Client {
 	private String telephone;
 	private String email;
 	
-	@OneToMany(mappedBy = "Reservation")
+	@OneToMany(mappedBy = "client")
 	private List<Reservation>listeR;
 	
 	
 	public Client() {
 		super();
 	}
+
 	public Client(String nom, String prenom, String adresse, String telephone, String email) {
 		super();
 		this.nom = nom;
@@ -74,6 +75,14 @@ public class Client {
 	public void setEmail(String email) {
 		this.email = email;
 	}
+	public List<Reservation> getListeR() {
+		return listeR;
+	}
+
+	public void setListeR(List<Reservation> listeR) {
+		this.listeR = listeR;
+	}
+
 	@Override
 	public String toString() {
 		return "Client [id=" + id + ", nom=" + nom + ", prenom=" + prenom + ", adresse=" + adresse + ", telephone="

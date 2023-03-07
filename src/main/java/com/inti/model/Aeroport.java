@@ -22,11 +22,11 @@ public class Aeroport {
 	private int id;
 	private String nom;
 	
-//	@OneToMany
-//	private Vol volDepart;
-//	
-//	@OneToMany
-//	private Vol volArrivee;
+	@OneToMany(mappedBy ="aeroportDepart",targetEntity = Vol.class)
+	private List<Vol>  LvolDepart;
+	
+	@OneToMany(mappedBy = "aeroportArrivee")
+	private List<Vol> LvolArrivee;
 	
 	@OneToMany(mappedBy = "aeroport", targetEntity = InfosEscale.class)
 	private List<InfosEscale> listeInfosEscale;
@@ -42,6 +42,20 @@ public class Aeroport {
 		super();
 		this.id = id;
 		this.nom = nom;
+	}
+	
+	
+	public List<Vol> getLvolDepart() {
+		return LvolDepart;
+	}
+	public void setLvolDepart(List<Vol> lvolDepart) {
+		LvolDepart = lvolDepart;
+	}
+	public List<Vol> getLvolArrivee() {
+		return LvolArrivee;
+	}
+	public void setLvolArrivee(List<Vol> lvolArrivee) {
+		LvolArrivee = lvolArrivee;
 	}
 	public int getId() {
 		return id;
