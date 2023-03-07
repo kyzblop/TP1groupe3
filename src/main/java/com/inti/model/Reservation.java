@@ -75,12 +75,6 @@ public class Reservation {
 	}
 
 
-	@Override
-	public String toString() {
-		return "Reservation [id=" + id + ", date=" + date + ", numero=" + numero + "]";
-	}
-
-
 	public Client getClient() {
 		return client;
 	}
@@ -99,6 +93,21 @@ public class Reservation {
 	public void setPassager(Passager passager) {
 		this.passager = passager;
 	}
+
+
+	@Override
+	public String toString() {
+		return "Reservation [id=" + id + ", date=" + date + ", numero=" + numero + "]";
+	}
+
+
+
+
+
+
+
+
+
 
 
 	public Vol getVol() {

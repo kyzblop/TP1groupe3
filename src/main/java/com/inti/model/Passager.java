@@ -19,11 +19,11 @@ public class Passager {
 	private String nom;
 	private String prenom;
 	
-	@OneToMany
-	private List<Reservation>listeRes;
+	
 		
 	@OneToMany(mappedBy = "passager")
-	private List<Reservation>listeR;
+	private List<Reservation>listeRes;
+
 	
 
 	public Passager() {
@@ -58,6 +58,14 @@ public class Passager {
 
 	public void setPrenom(String prenom) {
 		this.prenom = prenom;
+	}
+
+	public List<Reservation> getListeRes() {
+		return listeRes;
+	}
+
+	public void setListeRes(List<Reservation> listeRes) {
+		this.listeRes = listeRes;
 	}
 
 	@Override
