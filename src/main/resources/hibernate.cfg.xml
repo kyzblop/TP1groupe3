@@ -9,12 +9,17 @@
         <property name="hibernate.connection.url">jdbc:mysql://localhost:3306/tp1hibernate</property>
         <property name="hibernate.connection.username">root</property>
         <property name="hibernate.dialect">org.hibernate.dialect.MySQL5Dialect</property>
-         <property name="hibernate.hbm2ddl.auto">create</property>
+         <property name="hibernate.hbm2ddl.auto">update</property>
         <property name="show_sql">true</property>
         
         <mapping class="com.inti.model.Client"/>
         <mapping class="com.inti.model.Passager"/>
         <mapping class="com.inti.model.Reservation"/>
+        <mapping class="com.inti.model.Ville"/>
+        <mapping class="com.inti.model.InfosEscale"/>
+        <mapping class="com.inti.model.CompagnieAerienne"/>
+        <mapping class="com.inti.model.Aeroport"/>
         
+          
     </session-factory>
 </hibernate-configuration>
