@@ -1,6 +1,4 @@
 package com.inti.util;
-
-
 import org.hibernate.SessionFactory;
 import org.hibernate.cfg.Configuration;
 
@@ -15,4 +13,5 @@ private static SessionFactory sessionFactory= buildSessionFactory();
 	public static SessionFactory getSessionFactory() {
 		return sessionFactory;
 	}
+
 }

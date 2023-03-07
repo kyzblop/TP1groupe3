@@ -29,10 +29,10 @@
   <input type="text" class="form-control" id="formGroupExampleInput" name="numero" required="required">
 </div>
 <p>(*) : champs obligatoires</p>
-<input type="radio" class="btn-check" name="options-outlined" id="success-outlined" autocomplete="off" checked>
+<input type="radio" class="btn-check" name="options-outlined" id="success-outlined" autocomplete="off" checked value="confirmer">
 <label class="btn btn-outline-success" for="success-outlined">Confirmer la reservation</label>
 
-<input type="radio" class="btn-check" name="options-outlined" id="danger-outlined" autocomplete="off">
+<input type="radio" class="btn-check" name="options-outlined" id="danger-outlined" autocomplete="off" value="annuler">
 <label class="btn btn-outline-danger" for="danger-outlined">Annuler la reservation</label>
 
 <button type="submit" class="btn btn-success"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-send-fill" viewBox="0 0 16 16">
