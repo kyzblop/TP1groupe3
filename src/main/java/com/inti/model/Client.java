@@ -23,7 +23,7 @@ public class Client {
 	private String telephone;
 	private String email;
 	
-	@OneToMany(mappedBy = "Reservation")
+	@OneToMany(mappedBy = "client")
 	private List<Reservation>listeR;
 	
 	

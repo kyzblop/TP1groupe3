@@ -22,7 +22,7 @@ public class Passager {
 	@OneToMany
 	private List<Reservation>listeRes;
 		
-	@OneToMany(mappedBy = "Reservation")
+	@OneToMany(mappedBy = "passager")
 	private List<Reservation>listeR;
 	
 

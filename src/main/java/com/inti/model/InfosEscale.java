@@ -9,8 +9,10 @@ import javax.persistence.ManyToOne;
 import javax.persistence.OneToOne;
 import javax.persistence.Table;
 
+
 @Entity
 @Table
+
 public class InfosEscale {
 
 	@Id
@@ -18,10 +20,11 @@ public class InfosEscale {
 	private int id;
 	private int heureArrivee;
 	private int heureDepart;
+
 	
-//	@ManyToOne
-//	@JoinColumn(name = "idV")
-//	private Vol vol;
+	@ManyToOne
+	@JoinColumn(name = "idV")
+	private Vol vol;
 	
 	@ManyToOne
 	@JoinColumn(name = "idA")
@@ -61,9 +64,18 @@ public class InfosEscale {
 	public void setAeroport(Aeroport aeroport) {
 		this.aeroport = aeroport;
 	}
+	
+	
+	public Vol getVol() {
+		return vol;
+	}
+	public void setVol(Vol vol) {
+		this.vol = vol;
+	}
 	@Override
 	public String toString() {
 		return "InfosEscale [id=" + id + ", heureArrivee=" + heureArrivee + ", heureDepart=" + heureDepart + "]";
 	}
+	
 	
 }

@@ -15,6 +15,13 @@
 		<mapping class="com.inti.model.Client"/>
 		<mapping class="com.inti.model.Passager"/>
 		<mapping class="com.inti.model.Reservation"/>
+		<mapping class="com.inti.model.Aeroport"/>
+		<mapping class="com.inti.model.CompagnieAerienne"/>
+		<mapping class="com.inti.model.InfosEscale"/>
+		<mapping class="com.inti.model.Ville"/>
+		<mapping class="com.inti.model.Vol"/>
+		
+		
 		
 	</session-factory>
 </hibernate-configuration>
