@@ -70,6 +70,26 @@ public class Reservation {
 	}
 
 
+	public Client getClient() {
+		return client;
+	}
+
+
+	public void setClient(Client client) {
+		this.client = client;
+	}
+
+
+	public Passager getPassager() {
+		return passager;
+	}
+
+
+	public void setPassager(Passager passager) {
+		this.passager = passager;
+	}
+
+
 	@Override
 	public String toString() {
 		return "Reservation [id=" + id + ", date=" + date + ", numero=" + numero + "]";
