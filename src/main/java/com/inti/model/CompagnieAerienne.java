@@ -29,9 +29,8 @@ public class CompagnieAerienne {
 	public CompagnieAerienne() {
 		super();
 	}
-	public CompagnieAerienne(int id, String nom) {
+	public CompagnieAerienne(String nom) {
 		super();
-		this.id = id;
 		this.nom = nom;
 	}
 	public int getId() {

@@ -22,6 +22,7 @@ public class Vol {
 	private int heureDepart;
 	private int heureArrivee;
 	private LocalDate dateArrivee;
+	
 	@ManyToOne
 	@JoinColumn(name = "idAeroportDepart")
 	private Aeroport aeroportDepart;
@@ -54,6 +55,19 @@ public class Vol {
 		this.heureDepart = heureDepart;
 		this.heureArrivee = heureArrivee;
 		this.dateArrivee = dateArrivee;
+	}
+
+	
+	public Vol(LocalDate dateDepart, int heureDepart, int heureArrivee, LocalDate dateArrivee, Aeroport aeroportDepart,
+			Aeroport aeroportArrivee, CompagnieAerienne compagnie) {
+		super();
+		this.dateDepart = dateDepart;
+		this.heureDepart = heureDepart;
+		this.heureArrivee = heureArrivee;
+		this.dateArrivee = dateArrivee;
+		this.aeroportDepart = aeroportDepart;
+		this.aeroportArrivee = aeroportArrivee;
+		this.compagnie = compagnie;
 	}
 
 	public int getId() {
