@@ -45,6 +45,14 @@ public class Reservation {
 	}
 
 
+	public Reservation(LocalDate date, int numero, Passager passager) {
+		super();
+		this.date = date;
+		this.numero = numero;
+		this.passager = passager;
+	}
+
+
 	public int getId() {
 		return id;
 	}
